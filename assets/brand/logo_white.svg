@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 145" width="100%" height="100%">
+  <!-- Dark-Background / Inverted Brand Variant for Footer & Dark Themes -->
+  <g transform="translate(10, 15)">
+    <!-- "TELAS" Text in Pure White (#FFFFFF) -->
+    <text x="5" y="82" font-family="'Montserrat', 'Arial Black', 'Trebuchet MS', sans-serif" font-size="74" font-weight="900" fill="#FFFFFF" letter-spacing="-1">TELAS</text>
+
+    <!-- "PLUS" Container: Solid White Box -->
+    <path d="M 272 18 L 522 18 Q 530 18 530 26 L 530 90 Q 530 98 522 98 L 272 98 Z" fill="#FFFFFF" />
+
+    <!-- "PLUS" Text in Azul Noche (#0B192C) for maximum contrast -->
+    <text x="286" y="80" font-family="'Montserrat', 'Arial Black', 'Trebuchet MS', sans-serif" font-size="64" font-weight="900" fill="#0B192C" letter-spacing="0.5">PLUS</text>
+
+    <!-- 3D PLUS (+) Symbol in SUPERSCRIPT to the right of final "S" -->
+    <g transform="translate(498, 35) scale(0.70)">
+      <!-- 3D Shadow extrusion in brand vibrant orange (#FF6B00) -->
+      <path d="M -5 -22 L 5 -22 L 5 -7 L 20 -7 L 20 3 L 5 3 L 5 18 L -5 18 L -5 3 L -20 3 L -20 -7 L -5 -7 Z" fill="#FF6B00" stroke="#FF6B00" stroke-width="6" stroke-linejoin="round" transform="translate(2.5, 3.5)" />
+      <!-- Solid White Cross with Azul Noche outline (#0B192C) -->
+      <path d="M -5 -22 L 5 -22 L 5 -7 L 20 -7 L 20 3 L 5 3 L 5 18 L -5 18 L -5 3 L -20 3 L -20 -7 L -5 -7 Z" fill="#FFFFFF" stroke="#0B192C" stroke-width="3.5" stroke-linejoin="round" />
+    </g>
+
+    <!-- Underline: Left Part (White under TELAS) -->
+    <rect x="5" y="112" width="255" height="4.5" rx="2" fill="#FFFFFF" />
+
+    <!-- Underline: Right Part (Vibrant Orange Accent under PLUS) -->
+    <rect x="272" y="112" width="258" height="4.5" rx="2" fill="#FF6B00" />
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 145" width="100%" height="100%">
+  <defs>
+    <!-- Filter for 3D outline and shadow on Plus mark -->
+    <filter id="plusShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2" dy="3" stdDeviation="0" flood-color="#050C16" flood-opacity="1"/>
+    </filter>
+  </defs>
+
+  <!-- Group for main content -->
+  <g transform="translate(10, 15)">
+    <!-- "TELAS" Text in Azul Noche (#0B192C) -->
+    <text x="5" y="82" font-family="'Montserrat', 'Arial Black', 'Trebuchet MS', sans-serif" font-size="74" font-weight="900" fill="#0B192C" letter-spacing="-1">TELAS</text>
+
+    <!-- "PLUS" Container: Solid Dark Box with ample room for PLUS and Superscript (+) -->
+    <path d="M 272 18 L 522 18 Q 530 18 530 26 L 530 90 Q 530 98 522 98 L 272 98 Z" fill="#0B192C" />
+
+    <!-- "PLUS" Text in Crisp White -->
+    <text x="286" y="80" font-family="'Montserrat', 'Arial Black', 'Trebuchet MS', sans-serif" font-size="64" font-weight="900" fill="#FFFFFF" letter-spacing="0.5">PLUS</text>
+
+    <!-- 3D White PLUS (+) Symbol in SUPERSCRIPT to the right of final "S" -->
+    <g transform="translate(498, 35) scale(0.70)">
+      <!-- Base shadow/stroke for 3D extrusion effect -->
+      <path d="M -5 -22 L 5 -22 L 5 -7 L 20 -7 L 20 3 L 5 3 L 5 18 L -5 18 L -5 3 L -20 3 L -20 -7 L -5 -7 Z" fill="#050C16" stroke="#050C16" stroke-width="6" stroke-linejoin="round" transform="translate(2.5, 3.5)" />
+      <!-- Solid White Cross with dark outline -->
+      <path d="M -5 -22 L 5 -22 L 5 -7 L 20 -7 L 20 3 L 5 3 L 5 18 L -5 18 L -5 3 L -20 3 L -20 -7 L -5 -7 Z" fill="#FFFFFF" stroke="#0B192C" stroke-width="3.5" stroke-linejoin="round" />
+    </g>
+
+    <!-- Underline: Left Part (Azul Noche under TELAS) -->
+    <rect x="5" y="112" width="255" height="4.5" rx="2" fill="#0B192C" />
+
+    <!-- Underline: Right Part (Vibrant Orange Accent under PLUS) -->
+    <rect x="272" y="112" width="258" height="4.5" rx="2" fill="#FF6B00" />
+  </g>
+</svg>

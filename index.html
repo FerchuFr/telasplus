@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TELA PLUS + | Venta Mayorista Textil por Rollo</title>
+  <link rel="icon" type="image/svg+xml" href="assets/brand/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- TOPBAR (CARTEL DE LETRAS CON DESPLAZAMIENTO HACIA LA IZQUIERDA) -->
+  <div class="topbar">
+    <div class="topbar-track">
+      <div class="ticker-item">
+        <span>VENTA MAYORISTA EXCLUSIVA POR ROLLO CERRADO</span>
+        <span class="ticker-dot">•</span>
+        <span>ENVÍOS A EXPRESOS PARA TODO EL PAÍS</span>
+        <span class="ticker-dot">•</span>
+        <span class="highlight">ATENCIÓN INMEDIATA POR WHATSAPP</span>
+        <span class="ticker-dot">•</span>
+        <span>STOCK PERMANENTE EN PARTIDAS</span>
+        <span class="ticker-dot">•</span>
+        <span>PRECIOS DIRECTOS DE TEJEDURÍA</span>
+        <span class="ticker-dot">•</span>
+      </div>
+      <div class="ticker-item">
+        <span>VENTA MAYORISTA EXCLUSIVA POR ROLLO CERRADO</span>
+        <span class="ticker-dot">•</span>
+        <span>ENVÍOS A EXPRESOS PARA TODO EL PAÍS</span>
+        <span class="ticker-dot">•</span>
+        <span class="highlight">ATENCIÓN INMEDIATA POR WHATSAPP</span>
+        <span class="ticker-dot">•</span>
+        <span>STOCK PERMANENTE EN PARTIDAS</span>
+        <span class="ticker-dot">•</span>
+        <span>PRECIOS DIRECTOS DE TEJEDURÍA</span>
+        <span class="ticker-dot">•</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand-logo" onclick="switchTab('inicio')">
+        <img src="assets/brand/logo_horizontal.svg" alt="TELA PLUS + Logo">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul>
+          <li><a id="nav-inicio" class="active" onclick="switchTab('inicio')">Inicio</a></li>
+          <li><a id="nav-quienes" onclick="switchTab('quienes')">Quiénes Somos</a></li>
+          <li><a id="nav-catalogo" onclick="switchTab('catalogo')">Catálogo</a></li>
+          <li><a id="nav-contacto" onclick="switchTab('contacto')">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions (WhatsApp Button + Hamburger Button) -->
+      <div class="header-actions">
+        <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20recibir%20la%20lista%20de%20precios%20por%20rollo"
+          target="_blank" class="btn-header-wa" aria-label="Cotizar por WhatsApp" title="Cotizar por WhatsApp">
+          <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon">
+          <span class="wa-btn-text">Cotizar WhatsApp</span>
+        </a>
+
+        <!-- Hamburger Toggle Button -->
+        <button id="hamburger-btn" class="hamburger-btn" type="button" onclick="toggleMobileMenu()"
+          aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Navegación móvil">
+      <ul class="mobile-nav-list">
+        <li><a id="mobile-nav-inicio" class="mobile-nav-link active" onclick="switchTab('inicio')">Inicio</a></li>
+        <li><a id="mobile-nav-quienes" class="mobile-nav-link" onclick="switchTab('quienes')">Quiénes Somos</a></li>
+        <li><a id="mobile-nav-catalogo" class="mobile-nav-link" onclick="switchTab('catalogo')">Catálogo de Telas</a></li>
+        <li><a id="mobile-nav-contacto" class="mobile-nav-link" onclick="switchTab('contacto')">Contacto & Cotizaciones</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20asesoramiento%20para%20compra%20por%20rollo"
+          target="_blank" class="btn-mobile-drawer-wa">
+          <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon"> Hablar con un Asesor Mayorista
+        </a>
+      </div>
+    </nav>
+  </header>
+  <div id="mobile-nav-backdrop" class="mobile-nav-backdrop" onclick="closeMobileMenu()"></div>
+
+  <!-- PÁGINA 1: INICIO -->
+  <main id="page-inicio" class="page-tab active">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <span class="hero-badge">Tejeduría & Abastecimiento Mayorista B2B</span>
+        <h1>Abastecimiento Textil x Rollo</h1>
+        <p>Especialistas en Frisas, Jerseys, Rústicos y Deportivos. Estabilidad de tintura y despacho inmediato para
+          confeccionistas y marcas de indumentaria.</p>
+        <div class="hero-ctas">
+          <a href="#" class="btn-solid-white" onclick="switchTab('catalogo')">Explorar Catálogo</a>
+          <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20asesoramiento%20para%20compra%20por%20rollo"
+            target="_blank" class="btn-solid-wa">
+            <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon"> Hablar con Asesor Comercial
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Strip (Destacados de Confianza: Envíos, Mayoristas y Compra Asistida) -->
+    <section class="trust-strip">
+      <div class="trust-container">
+        <!-- Item 1: Envíos a todo el país -->
+        <div class="trust-item">
+          <div class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 54 54" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="20" x2="14" y2="20" />
+              <line x1="2" y1="27" x2="10" y2="27" />
+              <line x1="5" y1="34" x2="12" y2="34" />
+              <rect x="15" y="14" width="22" height="22" rx="2" />
+              <path d="M37 22 L45 22 L49 28 L49 36 L37 36 Z" />
+              <path d="M37 24 L44 24 L47 28 L37 28 Z" fill="none" stroke-width="2" />
+              <circle cx="23" cy="38" r="4.5" fill="#FFF" stroke-width="2.4" />
+              <circle cx="43" cy="38" r="4.5" fill="#FFF" stroke-width="2.4" />
+            </svg>
+          </div>
+          <div class="trust-info">
+            <h3 class="trust-title">ENVÍOS A<br>TODO EL PAÍS</h3>
+            <p class="trust-desc">Elegí la opción que quieras • Despacho a expresos</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Mayoristas por Rollo -->
+        <div class="trust-item">
+          <div class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 54 54" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M11 15 L43 15 L43 21 C43 24 39 25 39 22 C39 25 35 25 35 22 C35 25 31 25 31 22 C31 25 27 25 27 22 C27 25 23 25 23 22 C23 25 19 25 19 22 C19 25 15 25 15 22 C15 25 11 24 11 21 Z" />
+              <path d="M13 24 L13 41 C13 42.5 14 43.5 15.5 43.5 L38.5 43.5 C40 43.5 41 42.5 41 41 L41 24" />
+              <path d="M22 43.5 L22 32 L32 32 L32 43.5" />
+              <circle cx="7" cy="27" r="3.5" fill="#FFF" stroke-width="2" />
+              <line x1="9" y1="24.5" x2="11" y2="23" stroke-width="2" />
+              <circle cx="7" cy="27" r="0.8" fill="currentColor" stroke="none" />
+            </svg>
+          </div>
+          <div class="trust-info">
+            <h3 class="trust-title">MAYORISTAS<br>POR ROLLO</h3>
+            <p class="trust-desc">Atención a fabricantes, talleres y locales comerciales.</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Compra Asistida -->
+        <div class="trust-item">
+          <div class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 54 54" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 28 C12 18 19 11 27 11 C35 11 42 18 42 28" />
+              <rect x="9" y="27" width="5" height="11" rx="2.5" fill="#FFF" />
+              <rect x="40" y="27" width="5" height="11" rx="2.5" fill="#FFF" />
+              <path d="M15 28 C15 36 20.5 41 27 41 C33.5 41 39 36 39 28" />
+              <path d="M18 23 C22 26 27 20 27 20 C27 20 32 26 36 23" />
+              <circle cx="22" cy="29" r="1.5" fill="currentColor" stroke="none" />
+              <circle cx="32" cy="29" r="1.5" fill="currentColor" stroke="none" />
+              <path d="M42 36 L34 44 L28 44" stroke-width="2.2" />
+              <circle cx="27" cy="44" r="1.5" fill="currentColor" stroke="none" />
+            </svg>
+          </div>
+          <div class="trust-info">
+            <h3 class="trust-title">COMPRA<br>ASISTIDA</h3>
+            <p class="trust-desc">Estamos para asesorarte directamente por WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Telas Destacadas en Inicio -->
+    <section class="section-wrap">
+      <div class="section-head">
+        <span class="section-tag">Producción Destacada</span>
+        <h2 class="section-title">Líneas Textiles Más Solicitadas</h2>
+      </div>
+
+      <div class="catalog-grid">
+        <!-- Frisa -->
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="assets/fabrics/frisa_algodon.jpg" alt="Frisa de Algodón">
+            <span class="badge-category">Invierno / Abrigo</span>
+          </div>
+          <div class="product-body">
+            <div>
+              <h3 class="product-title">Frisa de Algodón</h3>
+              <p class="product-subtitle">Peinada y Cardada • Relleno extra suave</p>
+              <div class="spec-box">
+                <span class="spec-label">Ancho:</span> <span class="spec-value">1.60 m</span>
+                <span class="spec-label">Rendimiento:</span> <span class="spec-value">2.40 m/kg</span>
+                <span class="spec-label">Composición:</span> <span class="spec-value">85% Alg / 15% Pol</span>
+                <span class="spec-label">Uso:</span> <span class="spec-value">Buzos / Pantalones</span>
+              </div>
+            </div>
+            <div>
+              <div class="color-swatches-box">
+                <div class="swatches-title">
+                  <span>Colores en Stock</span>
+                  <span>+12 tonos</span>
+                </div>
+                <div class="swatches-row">
+                  <div class="color-dot" style="background:#8BB8E8;" title="Celeste Pastel"></div>
+                  <div class="color-dot" style="background:#111111;" title="Negro"></div>
+                  <div class="color-dot" style="background:#FFFFFF;" title="Blanco"></div>
+                  <div class="color-dot" style="background:#999999;" title="Gris Melange"></div>
+                  <div class="color-dot" style="background:#1B2A4A;" title="Azul Marino"></div>
+                  <div class="color-dot" style="background:#6B1D2F;" title="Bordo"></div>
+                </div>
+              </div>
+              <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20cotizar%20Frisa%20de%20Algodón%20por%20rollo"
+                target="_blank" class="btn-cotizar-wa">
+                <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon"> Cotizar por WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Jersey -->
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="assets/fabrics/jersey_algodon.jpg" alt="Jersey de Algodón">
+            <span class="badge-category">Básicos / Remería</span>
+          </div>
+          <div class="product-body">
+            <div>
+              <h3 class="product-title">Jersey de Algodón 24/1</h3>
+              <p class="product-subtitle">Peinado y Cardado Premium</p>
+              <div class="spec-box">
+                <span class="spec-label">Ancho:</span> <span class="spec-value">1.80 m tubular</span>
+                <span class="spec-label">Rendimiento:</span> <span class="spec-value">3.20 m/kg</span>
+                <span class="spec-label">Composición:</span> <span class="spec-value">100% Algodón</span>
+                <span class="spec-label">Uso:</span> <span class="spec-value">Remeras / Básicos</span>
+              </div>
+            </div>
+            <div>
+              <div class="color-swatches-box">
+                <div class="swatches-title">
+                  <span>Colores en Stock</span>
+                  <span>+15 tonos</span>
+                </div>
+                <div class="swatches-row">
+                  <div class="color-dot" style="background:#C5A3D9;" title="Lila Pastel"></div>
+                  <div class="color-dot" style="background:#6B9BD2;" title="Celeste"></div>
+                  <div class="color-dot" style="background:#E59866;" title="Durazno"></div>
+                  <div class="color-dot" style="background:#D2527F;" title="Rosa"></div>
+                  <div class="color-dot" style="background:#FFFFFF;" title="Blanco"></div>
+                  <div class="color-dot" style="background:#111111;" title="Negro"></div>
+                </div>
+              </div>
+              <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20cotizar%20Jersey%20de%20Algodón%20por%20rollo"
+                target="_blank" class="btn-cotizar-wa">
+                <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon"> Cotizar por WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Deportivo -->
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="assets/fabrics/deportivo_frizado.jpg" alt="Deportivo Frizado">
+            <span class="badge-category">Deportivo & Colegial</span>
+          </div>
+          <div class="product-body">
+            <div>
+              <h3 class="product-title">Deportivo Frizado</h3>
+              <p class="product-subtitle">100% Poliéster de Alta Resistencia</p>
+              <div class="spec-box">
+                <span class="spec-label">Ancho:</span> <span class="spec-value">1.60 m</span>
+                <span class="spec-label">Rendimiento:</span> <span class="spec-value">2.80 m/kg</span>
+                <span class="spec-label">Composición:</span> <span class="spec-value">100% Poliéster</span>
+                <span class="spec-label">Uso:</span> <span class="spec-value">Conjuntos Deportivos</span>
+              </div>
+            </div>
+            <div>
+              <div class="color-swatches-box">
+                <div class="swatches-title">
+                  <span>Colores en Stock</span>
+                  <span>+10 tonos</span>
+                </div>
+                <div class="swatches-row">
+                  <div class="color-dot" style="background:#1D4ED8;" title="Azul Francia"></div>
+                  <div class="color-dot" style="background:#1B2A4A;" title="Azul Marino"></div>
+                  <div class="color-dot" style="background:#111111;" title="Negro"></div>
+                  <div class="color-dot" style="background:#C00000;" title="Rojo"></div>
+                  <div class="color-dot" style="background:#1E4620;" title="Verde Colegial"></div>
+                  <div class="color-dot" style="background:#FFFFFF;" title="Blanco"></div>
+                </div>
+              </div>
+              <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20cotizar%20Deportivo%20Frizado%20por%20rollo"
+                target="_blank" class="btn-cotizar-wa">
+                <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon"> Cotizar por WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Rústico -->
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="assets/fabrics/rustico_algodon.jpg" alt="Rústico de Algodón">
+            <span class="badge-category">Media Estación</span>
+          </div>
+          <div class="product-body">
+            <div>
+              <h3 class="product-title">Rústico de Algodón</h3>
+              <p class="product-subtitle">Confort térmico sin frisar</p>
+              <div class="spec-box">
+                <span class="spec-label">Ancho:</span> <span class="spec-value">1.65 m</span>
+                <span class="spec-label">Rendimiento:</span> <span class="spec-value">2.60 m/kg</span>
+                <span class="spec-label">Composición:</span> <span class="spec-value">85% Alg / 15% Pol</span>
+                <span class="spec-label">Uso:</span> <span class="spec-value">Buzos livianos / Shorts</span>
+              </div>
+            </div>
+            <div>
+              <div class="color-swatches-box">
+                <div class="swatches-title">
+                  <span>Colores en Stock</span>
+                  <span>+12 tonos</span>
+                </div>
+                <div class="swatches-row">
+                  <div class="color-dot" style="background:#9E9E9E;" title="Gris Melange"></div>
+                  <div class="color-dot" style="background:#111111;" title="Negro"></div>
+                  <div class="color-dot" style="background:#FFFFFF;" title="Blanco"></div>
+                  <div class="color-dot" style="background:#1B2A4A;" title="Azul Marino"></div>
+                  <div class="color-dot" style="background:#D1B48C;" title="Beige / Visón"></div>
+                  <div class="color-dot" style="background:#3D5A40;" title="Verde Militar"></div>
+                </div>
+              </div>
+              <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20cotizar%20Rústico%20de%20Algodón%20por%20rollo"
+                target="_blank" class="btn-cotizar-wa">
+                <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon"> Cotizar por WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center; margin-top:40px;">
+        <button class="btn-solid-white" style="border:1px solid #111; cursor:pointer;"
+          onclick="switchTab('catalogo')">Ver Todas las Telas del Catálogo →</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- PÁGINA 2: QUIÉNES SOMOS -->
+  <main id="page-quienes" class="page-tab">
+    <section class="section-wrap">
+      <div class="section-head">
+        <span class="section-tag">Identidad Textil</span>
+        <h2 class="section-title">Quiénes Somos</h2>
+      </div>
+
+      <div class="about-section">
+        <div class="about-image">
+          <div class="about-image-badge">
+            <h4 style="font-size:14px; margin-bottom:2px;">Depósito & Centro de Distribución</h4>
+            <p style="font-size:12px; color:#CCC;">Stock permanente para abastecer producciones continuas en todo el
+              país.</p>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2>Tu Socio Mayorista en la Cadena Textil</h2>
+          <p>
+            En <strong>TELA PLUS +</strong> nos especializamos en la comercialización de telas de punto por rollo
+            cerrado para confeccionistas, marcas de indumentaria y talleres de producción.
+          </p>
+          <p>
+            Entendemos que la rentabilidad de un taller depende del rendimiento exacto metro/kilo y de la consistencia
+            de color entre partidas. Por eso trabajamos con hilados seleccionados y un riguroso estándar de calidad.
+          </p>
+
+          <div class="about-grid-points">
+            <div class="point-card">
+              <h5>1. Hilados de Primera</h5>
+              <p>Algodón peinado 24/1 y fibras técnicas con durabilidad garantizada.</p>
+            </div>
+            <div class="point-card">
+              <h5>2. Rendimiento Real</h5>
+              <p>Fichas técnicas con anchos y gramajes certificados para tizada.</p>
+            </div>
+            <div class="point-card">
+              <h5>3. Stock Continuo</h5>
+              <p>Disponibilidad constante en colores básicos de rotación alta.</p>
+            </div>
+            <div class="point-card">
+              <h5>4. Despacho Rápido</h5>
+              <p>Entrega coordinada en expresos para envíos a todo el interior.</p>
+            </div>
+          </div>
+
+          <div>
+            <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20conocer%20las%20condiciones%20mayoristas"
+              target="_blank" class="btn-solid-wa">
+              <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon"> Hablar con Nuestro Asesor
+              Comercial
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PÁGINA 3: CATÁLOGO COMPLETO -->
+  <main id="page-catalogo" class="page-tab">
+    <section class="section-wrap">
+      <div class="section-head">
+        <span class="section-tag">Catálogo Técnico Mayorista (Hasta 20 Artículos)</span>
+        <h2 class="section-title">Líneas de Telas por Rollo</h2>
+        <p style="color:var(--text-muted); font-size:14px; margin-top:8px;">Consultá fichas técnicas y precios
+          actualizados directamente vía WhatsApp.</p>
+      </div>
+
+      <div class="catalog-grid">
+        <!-- 1. Frisa -->
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="assets/fabrics/frisa_algodon.jpg" alt="Frisa de Algodón">
+            <span class="badge-category">Invierno / Abrigo</span>
+          </div>
+          <div class="product-body">
+            <div>
+              <h3 class="product-title">Frisa de Algodón</h3>
+              <p class="product-subtitle">Peinada y Cardada • Relleno suave</p>
+              <div class="spec-box">
+                <span class="spec-label">Ancho:</span> <span class="spec-value">1.60 m</span>
+                <span class="spec-label">Rendimiento:</span> <span class="spec-value">2.40 m/kg</span>
+                <span class="spec-label">Comp.:</span> <span class="spec-value">85% Alg / 15% Pol</span>
+                <span class="spec-label">Gramaje:</span> <span class="spec-value">310 gr/m²</span>
+              </div>
+            </div>
+            <div>
+              <div class="color-swatches-box">
+                <div class="swatches-title"><span>Variantes</span> <span>12 a 15 colores</span></div>
+                <div class="swatches-row">
+                  <div class="color-dot" style="background:#8BB8E8;" title="Celeste Pastel"></div>
+                  <div class="color-dot" style="background:#111111;" title="Negro"></div>
+                  <div class="color-dot" style="background:#FFFFFF;" title="Blanco"></div>
+                  <div class="color-dot" style="background:#999999;" title="Gris Melange"></div>
+                  <div class="color-dot" style="background:#1B2A4A;" title="Azul Marino"></div>
+                  <div class="color-dot" style="background:#6B1D2F;" title="Bordo"></div>
+                </div>
+              </div>
+              <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20cotizar%20Frisa%20de%20Algodón"
+                target="_blank" class="btn-cotizar-wa">
+                <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon"> Cotizar Frisa por WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Jersey -->
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="assets/fabrics/jersey_algodon.jpg" alt="Jersey de Algodón">
+            <span class="badge-category">Remería / Básicos</span>
+          </div>
+          <div class="product-body">
+            <div>
+              <h3 class="product-title">Jersey de Algodón</h3>
+              <p class="product-subtitle">24/1 Peinado y Cardado</p>
+              <div class="spec-box">
+                <span class="spec-label">Ancho:</span> <span class="spec-value">1.80 m tub.</span>
+                <span class="spec-label">Rendimiento:</span> <span class="spec-value">3.20 m/kg</span>
+                <span class="spec-label">Comp.:</span> <span class="spec-value">100% Algodón</span>
+                <span class="spec-label">Gramaje:</span> <span class="spec-value">160 gr/m²</span>
+              </div>
+            </div>
+            <div>
+              <div class="color-swatches-box">
+                <div class="swatches-title"><span>Variantes</span> <span>15 colores</span></div>
+                <div class="swatches-row">
+                  <div class="color-dot" style="background:#C5A3D9;" title="Lila Pastel"></div>
+                  <div class="color-dot" style="background:#6B9BD2;" title="Celeste"></div>
+                  <div class="color-dot" style="background:#E59866;" title="Durazno"></div>
+                  <div class="color-dot" style="background:#D2527F;" title="Rosa"></div>
+                  <div class="color-dot" style="background:#FFFFFF;" title="Blanco"></div>
+                  <div class="color-dot" style="background:#111111;" title="Negro"></div>
+                </div>
+              </div>
+              <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20cotizar%20Jersey%20de%20Algodón"
+                target="_blank" class="btn-cotizar-wa">
+                <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon"> Cotizar Jersey por
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Deportivo Frizado -->
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="assets/fabrics/deportivo_frizado.jpg" alt="Deportivo Frizado">
+            <span class="badge-category">Deportivo & Colegial</span>
+          </div>
+          <div class="product-body">
+            <div>
+              <h3 class="product-title">Deportivo Frizado</h3>
+              <p class="product-subtitle">100% Poliéster Resistente</p>
+              <div class="spec-box">
+                <span class="spec-label">Ancho:</span> <span class="spec-value">1.60 m</span>
+                <span class="spec-label">Rendimiento:</span> <span class="spec-value">2.80 m/kg</span>
+                <span class="spec-label">Comp.:</span> <span class="spec-value">100% Poliéster</span>
+                <span class="spec-label">Gramaje:</span> <span class="spec-value">220 gr/m²</span>
+              </div>
+            </div>
+            <div>
+              <div class="color-swatches-box">
+                <div class="swatches-title"><span>Variantes</span> <span>10 colores</span></div>
+                <div class="swatches-row">
+                  <div class="color-dot" style="background:#1D4ED8;" title="Azul Francia"></div>
+                  <div class="color-dot" style="background:#1B2A4A;" title="Azul Marino"></div>
+                  <div class="color-dot" style="background:#111111;" title="Negro"></div>
+                  <div class="color-dot" style="background:#C00000;" title="Rojo"></div>
+                  <div class="color-dot" style="background:#1E4620;" title="Verde Colegial"></div>
+                  <div class="color-dot" style="background:#FFFFFF;" title="Blanco"></div>
+                </div>
+              </div>
+              <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20cotizar%20Deportivo%20Frizado"
+                target="_blank" class="btn-cotizar-wa">
+                <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon"> Cotizar Deportivo por
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Rústico -->
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="assets/fabrics/rustico_algodon.jpg" alt="Rústico de Algodón">
+            <span class="badge-category">Media Estación</span>
+          </div>
+          <div class="product-body">
+            <div>
+              <h3 class="product-title">Rústico de Algodón</h3>
+              <p class="product-subtitle">Tejido sin frisar • Tacto natural</p>
+              <div class="spec-box">
+                <span class="spec-label">Ancho:</span> <span class="spec-value">1.65 m</span>
+                <span class="spec-label">Rendimiento:</span> <span class="spec-value">2.60 m/kg</span>
+                <span class="spec-label">Comp.:</span> <span class="spec-value">85% Alg / 15% Pol</span>
+                <span class="spec-label">Gramaje:</span> <span class="spec-value">240 gr/m²</span>
+              </div>
+            </div>
+            <div>
+              <div class="color-swatches-box">
+                <div class="swatches-title"><span>Variantes</span> <span>12 colores</span></div>
+                <div class="swatches-row">
+                  <div class="color-dot" style="background:#9E9E9E;" title="Gris Melange"></div>
+                  <div class="color-dot" style="background:#111111;" title="Negro"></div>
+                  <div class="color-dot" style="background:#FFFFFF;" title="Blanco"></div>
+                  <div class="color-dot" style="background:#1B2A4A;" title="Azul Marino"></div>
+                  <div class="color-dot" style="background:#D1B48C;" title="Beige / Visón"></div>
+                  <div class="color-dot" style="background:#3D5A40;" title="Verde Militar"></div>
+                </div>
+              </div>
+              <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20cotizar%20Rústico%20de%20Algodón"
+                target="_blank" class="btn-cotizar-wa">
+                <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon"> Cotizar Rústico por
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Spun -->
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="assets/fabrics/spun_poliester.jpg" alt="Spun de Poliéster">
+            <span class="badge-category">Sublimación / Moda</span>
+          </div>
+          <div class="product-body">
+            <div>
+              <h3 class="product-title">Spun de Poliéster</h3>
+              <p class="product-subtitle">Apto para sublimar con tacto algodón</p>
+              <div class="spec-box">
+                <span class="spec-label">Ancho:</span> <span class="spec-value">1.60 m</span>
+                <span class="spec-label">Rendimiento:</span> <span class="spec-value">3.60 m/kg</span>
+                <span class="spec-label">Comp.:</span> <span class="spec-value">100% Poliéster</span>
+                <span class="spec-label">Gramaje:</span> <span class="spec-value">150 gr/m²</span>
+              </div>
+            </div>
+            <div>
+              <div class="color-swatches-box">
+                <div class="swatches-title"><span>Variantes</span> <span>10 colores</span></div>
+                <div class="swatches-row">
+                  <div class="color-dot" style="background:#E8B4B8;" title="Rosa Pastel / Nude"></div>
+                  <div class="color-dot" style="background:#FFFFFF;" title="Blanco Sublimable"></div>
+                  <div class="color-dot" style="background:#111111;" title="Negro"></div>
+                  <div class="color-dot" style="background:#E2E4E8;" title="Gris Melange Claro"></div>
+                  <div class="color-dot" style="background:#FDF1DB;" title="Manteca"></div>
+                  <div class="color-dot" style="background:#B0CBE9;" title="Celeste Pastel"></div>
+                </div>
+              </div>
+              <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20cotizar%20Spun%20de%20Poliéster"
+                target="_blank" class="btn-cotizar-wa">
+                <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon"> Cotizar Spun por WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Ribb -->
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="assets/fabrics/ribb_poliester.jpg" alt="Ribb Poliéster">
+            <span class="badge-category">Complementos / Cuellos</span>
+          </div>
+          <div class="product-body">
+            <div>
+              <h3 class="product-title">Ribb Poliéster / Algodón</h3>
+              <p class="product-subtitle">Alta elasticidad para puños y cuellos</p>
+              <div class="spec-box">
+                <span class="spec-label">Ancho:</span> <span class="spec-value">0.90 m tub.</span>
+                <span class="spec-label">Rendimiento:</span> <span class="spec-value">2.20 m/kg</span>
+                <span class="spec-label">Comp.:</span> <span class="spec-value">Ribb 1x1 / 2x2</span>
+                <span class="spec-label">Elasticidad:</span> <span class="spec-value">Superior</span>
+              </div>
+            </div>
+            <div>
+              <div class="color-swatches-box">
+                <div class="swatches-title"><span>Variantes</span> <span>Gama a tono</span></div>
+                <div class="swatches-row">
+                  <div class="color-dot" style="background:#97B68B;" title="Verde Seco / Pistacho"></div>
+                  <div class="color-dot" style="background:#111111;" title="Negro"></div>
+                  <div class="color-dot" style="background:#FFFFFF;" title="Blanco"></div>
+                  <div class="color-dot" style="background:#1B2A4A;" title="Azul Marino"></div>
+                  <div class="color-dot" style="background:#9E9E9E;" title="Gris Melange"></div>
+                  <div class="color-dot" style="background:#C8102E;" title="Rojo"></div>
+                </div>
+              </div>
+              <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20cotizar%20Ribb" target="_blank"
+                class="btn-cotizar-wa">
+                <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon"> Cotizar Ribb por WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Morley -->
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="assets/fabrics/morley.jpg" alt="Morley">
+            <span class="badge-category">Moda / Temporada</span>
+          </div>
+          <div class="product-body">
+            <div>
+              <h3 class="product-title">Morley</h3>
+              <p class="product-subtitle">Tejido acanalado fino de alta caída</p>
+              <div class="spec-box">
+                <span class="spec-label">Ancho:</span> <span class="spec-value">1.50 m</span>
+                <span class="spec-label">Rendimiento:</span> <span class="spec-value">3.40 m/kg</span>
+                <span class="spec-label">Comp.:</span> <span class="spec-value">Viscosa / Algodón</span>
+                <span class="spec-label">Uso:</span> <span class="spec-value">Remeras / Vestidos</span>
+              </div>
+            </div>
+            <div>
+              <div class="color-swatches-box">
+                <div class="swatches-title"><span>Variantes</span> <span>12 colores</span></div>
+                <div class="swatches-row">
+                  <div class="color-dot" style="background:#111111;" title="Negro"></div>
+                  <div class="color-dot" style="background:#175873;" title="Azul Petróleo / Teal"></div>
+                  <div class="color-dot" style="background:#BA6838;" title="Canela / Caramelo"></div>
+                  <div class="color-dot" style="background:#E0A12A;" title="Mostaza"></div>
+                  <div class="color-dot" style="background:#F2B6C6;" title="Rosa Pastel"></div>
+                  <div class="color-dot" style="background:#C71585;" title="Fucsia / Magenta"></div>
+                </div>
+              </div>
+              <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20cotizar%20Morley"
+                target="_blank" class="btn-cotizar-wa">
+                <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon"> Cotizar Morley por
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- PÁGINA 4: CONTACTO -->
+  <main id="page-contacto" class="page-tab">
+    <section class="section-wrap">
+      <div class="section-head">
+        <span class="section-tag">Atención Comercial B2B</span>
+        <h2 class="section-title">Contacto & Cotizaciones</h2>
+        <p style="color:var(--text-muted); font-size:14px; margin-top:8px;">Comunicate directamente con nuestro
+          equipo de ventas mayoristas por WhatsApp para cotizaciones inmediatas.</p>
+      </div>
+
+      <div class="contact-hub-container">
+        <!-- Banner Principal de WhatsApp -->
+        <div class="wa-big-cta">
+          <h3>¿Querés precios y disponibilidad en el momento?</h3>
+          <p>Escribinos por WhatsApp y te enviamos la lista de precios por rollo, stock de partidas y asesoramiento técnico directo.</p>
+          <a href="https://wa.me/5491100000000?text=Hola%20Tela%20Plus,%20quisiera%20la%20lista%20de%20precios%20actualizada"
+            target="_blank">
+            <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-btn-icon"> Chatear por WhatsApp
+          </a>
+        </div>
+
+        <!-- Tarjetas de Información Directa -->
+        <div class="contact-info-cards">
+          <div class="info-card-direct">
+            <h4>Atención Mayorista B2B</h4>
+            <p>Venta exclusiva por rollo cerrado para confeccionistas, marcas y talleres de todo el país. Asesoramiento comercial personalizado.</p>
+          </div>
+
+          <div class="info-card-direct">
+            <h4>Depósito & Logística</h4>
+            <p>Buenos Aires, Argentina.<br>Despachamos diariamente a transportes y expresos en CABA y GBA para envíos a
+              todo el territorio nacional.</p>
+          </div>
+
+          <div class="info-card-direct">
+            <h4>Horarios de Atención Comercial</h4>
+            <p>Lunes a Viernes de 08:00 a 17:30 hs.<br>Las consultas fuera de horario quedan registradas y se responden
+              a primera hora del día hábil siguiente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP (LLAMADO A LA ACCIÓN A LA DERECHA) -->
+  <a href="https://api.whatsapp.com/send?phone=5491100000000&text=Hola%20Tela%20Plus!%20Quisiera%20consultar%20por%20venta%20mayorista%20de%20telas%20por%20rollo"
+    target="_blank" rel="noopener noreferrer" class="wa-floating-btn" title="Contactar por WhatsApp Web o Desktop"
+    id="wa-floating-trigger">
+    <div class="wa-icon-wrapper">
+      <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" class="wa-icon-img">
+    </div>
+    <div class="wa-floating-text">
+      <span class="wa-text-label">Atención Inmediata</span>
+      <span class="wa-text-cta">Cotizá por WhatsApp</span>
+    </div>
+  </a>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <a href="#" class="brand-logo" onclick="switchTab('inicio')" style="margin-bottom:14px; display:inline-block;">
+          <img src="assets/brand/logo_white.svg" alt="TELA PLUS +" style="height:38px; width:auto;">
+        </a>
+        <p>Venta mayorista de telas de punto por rollo cerrado. Hilados seleccionados, rendimiento metro/kilo
+          garantizado y abastecimiento continuo a talleres y confeccionistas en toda la Argentina.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a onclick="switchTab('inicio')">Inicio</a></li>
+          <li><a onclick="switchTab('quienes')">Quiénes Somos</a></li>
+          <li><a onclick="switchTab('catalogo')">Catálogo de Telas</a></li>
+          <li><a onclick="switchTab('contacto')">Contacto & Cotizaciones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Líneas Textiles</h4>
+        <ul>
+          <li><a onclick="switchTab('catalogo')">Frisa de Algodón</a></li>
+          <li><a onclick="switchTab('catalogo')">Jersey de Algodón</a></li>
+          <li><a onclick="switchTab('catalogo')">Deportivo Frizado</a></li>
+          <li><a onclick="switchTab('catalogo')">Rústico de Algodón</a></li>
+          <li><a onclick="switchTab('catalogo')">Spun de Poliéster</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contactanos</h4>
+        <p style="margin-bottom:10px;">Atención centralizada y consultas mayoristas:</p>
+        <p style="color:#FFF; font-weight:700; margin-bottom:4px;"><img src="assets/brand/whatsapp_icon.svg"
+            alt="WhatsApp" class="wa-btn-icon" style="margin-right:4px;"> WhatsApp</p>
+        <p style="color:#8C93A4; font-size:12px; margin-bottom:12px;">Envianos tus consulta por WhatsApp</p>
+        <a href="https://wa.me/5491100000000" target="_blank" class="btn-solid-wa"
+          style="padding:8px 16px; font-size:11px;">
+          Hablar por WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <!-- Izquierda: Redes Sociales -->
+      <div class="footer-bottom-socials">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+          title="Facebook" aria-label="Facebook">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+          title="Instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </a>
+        <a href="https://wa.me/5491100000000" target="_blank" rel="noopener noreferrer" class="footer-social-btn wa"
+          title="WhatsApp" aria-label="WhatsApp" style="padding:0; overflow:hidden;">
+          <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" style="width:22px; height:22px; object-fit:contain;">
+        </a>
+      </div>
+
+      <!-- Centro: Todos los derechos reservados -->
+      <div class="footer-bottom-copy">
+        &copy; 2026 TELA PLUS +. Todos los derechos reservados.
+      </div>
+
+      <!-- Derecha: Datos de Contacto y Botón WhatsApp CTA -->
+      <div class="footer-bottom-contact">
+        <span>📞 11 XXXX-XXXX</span>
+        <span>•</span>
+        <span>✉️ ventas@telaplus.com.ar</span>
+        <a href="https://api.whatsapp.com/send?phone=5491100000000&text=Hola%20Tela%20Plus,%20quisiera%20consultar%20por%20telas%20por%20rollo"
+          target="_blank" rel="noopener noreferrer" class="btn-footer-wa-pill" title="Abrir WhatsApp Web o Desktop">
+          <img src="assets/brand/whatsapp_icon.svg" alt="WhatsApp" style="width:16px; height:16px; object-fit:contain;">
+          <span>Chatear en WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
