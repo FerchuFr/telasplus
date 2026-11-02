@@ -405,16 +405,17 @@ body.nav-locked {
 
 /* Brand wordmark badge (same typography and colors as the official logo) */
 .hero-badge.hero-badge-brand {
-  padding: 7px 16px 4px;
-  border-radius: 12px;
+  padding: 4px 12px 2px;
+  border-radius: 8px;
   line-height: 0;
+  margin-bottom: 14px;
 }
 
 .hero-badge.hero-badge-brand img {
   /* The SVG has no intrinsic size (width/height=100%), so set an explicit
      width matching its 560x145 viewBox ratio to avoid collapsing to 0 */
   display: block;
-  width: 130px;
+  width: 84px;
   height: auto;
   aspect-ratio: 560 / 145;
 }
@@ -1464,7 +1465,7 @@ footer {
   }
 
   .hero-badge.hero-badge-brand img {
-    width: 100px;
+    width: 70px;
   }
 
   .hero h1 {
