@@ -411,9 +411,12 @@ body.nav-locked {
 }
 
 .hero-badge.hero-badge-brand img {
+  /* The SVG has no intrinsic size (width/height=100%), so set an explicit
+     width matching its 560x145 viewBox ratio to avoid collapsing to 0 */
   display: block;
-  height: 46px;
-  width: auto;
+  width: 190px;
+  height: auto;
+  aspect-ratio: 560 / 145;
 }
 
 .hero h1 {
@@ -1461,7 +1464,7 @@ footer {
   }
 
   .hero-badge.hero-badge-brand img {
-    height: 34px;
+    width: 140px;
   }
 
   .hero h1 {
